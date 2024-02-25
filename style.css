@@ -14,7 +14,10 @@ body {
     justify-content: space-between;
     border-bottom: solid black 1px;
     align-items: center;
-
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1__title {
@@ -35,10 +38,31 @@ body {
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent;
 }
 
 .navbar__s2 input:focus {
     outline: none;
+}
+
+/* My Learning*/
+.myLearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.myLearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    top: 30px;
+    width: 100px;
+    right: 0;
+    display: none;
+}
+.myLearning:hover .myLearning__popup{
+    display: block;
 }
 
 .navbar__s3 {
@@ -53,6 +77,7 @@ body {
     padding: 10px;
     justify-content: space-evenly;
     border-bottom: solid black 1px;
+
 }
 
 .catagory p {
@@ -62,10 +87,23 @@ body {
     background-color: #a435ef;
     color: white;
 
+
 }
 
 .saleImage img {
     width: 100%;
+    position: relative;
+}
+
+.saleImage__offer {
+    padding: 10px;
+    position: absolute;
+    top: 190px;
+    border: solid black 1px;
+    left: 200px;
+    width: 350px;
+    background-color: white;
+
 }
 
 .recommended {
@@ -126,7 +164,7 @@ body {
 
 .mostpopular__details__desc {
     width: 280px;
-   
+
 }
 
 .mostpopular__details__desc img {
@@ -134,25 +172,29 @@ body {
     height: 60%;
 }
 
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 30px;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     padding: 20px;
     gap: 10px;
 }
-.footer__one_s1 p{
+
+.footer__one_s1 p {
     width: 200px;
     height: 35px;
 }
-.footer__one_s2 p{
+
+.footer__one_s2 p {
     width: 200px;
     height: 35px;
 }
-.footer__two{
+
+.footer__two {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
